@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding-top: 90px;
+  padding-top: 128px;
   font-family: "News Cycle", sans-serif;
   background-color: #e7eaf2;
   color: #007ab5;
@@ -20,10 +20,14 @@ button {
   background-color: #007ab5;
   border: none;
   padding: 10px 20px;
-  transition: 0.4s; }
+  transition: 0.4s;
+  border-bottom: 2px solid #005680;
+  border-right: 2px solid #005680; }
 
 button:hover {
-  background-color: #005680; }
+  background-color: #005680;
+  border-bottom: 2px solid #007ab5;
+  border-right: 2px solid #007ab5; }
 
 /** Header Stylings **/
 header {
@@ -31,18 +35,22 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #005680;
+  background-color: rgba(0, 86, 128, 0.9);
   color: #e7eaf2;
   padding: 21px 10px;
   text-align: center; }
 
 #title {
+  opacity: 1;
   font-weight: bold;
   display: inline-block;
   font-size: 2em;
   margin: 0; }
 
-#headerStuff {
-  float: right;
-  padding: 0px;
-  padding-top: 15px; }
+#nav {
+  opacity: 1; }
+  #nav a {
+    color: #e7eaf2; }
+  #nav a:hover {
+    text-decoration: none;
+    font-weight: 400; }
