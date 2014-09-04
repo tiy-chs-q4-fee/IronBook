@@ -1,0 +1,24 @@
+body {
+  font-family: "News Cycle", sans-serif;
+  background-color: #e7eaf2;
+  color: #007ab5;
+  font-weight: 400; }
+
+a {
+  text-decoration: none;
+  color: #007ab5;
+  transition: 0.4s; }
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 700; }
+
+button {
+  color: #e7eaf2;
+  background-color: #007ab5;
+  border: none;
+  padding: 10px 20px;
+  transition: 0.4s; }
+
+button:hover {
+  background-color: #005680; }

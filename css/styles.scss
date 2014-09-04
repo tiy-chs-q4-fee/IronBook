@@ -1,0 +1,34 @@
+$darkGrey: #444444;
+$darkBlue: #005680;
+$blue: #007AB5;
+$grey: #D1D1D1;
+$white: #E7EAF2;
+$font:'News Cycle', sans-serif;
+$light: 400;
+$heavy: 700;
+
+body {
+  font-family: $font;
+  background-color: $white;
+  color: $blue;
+  font-weight: $light;
+}
+a {
+  text-decoration:none;
+  color: $blue;
+  transition: 0.4s;
+}
+a:hover {
+  text-decoration:underline;
+  font-weight: $heavy;
+}
+button {
+  color: $white;
+  background-color: $blue;
+  border:none;
+  padding:10px 20px;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: $darkBlue;
+}
