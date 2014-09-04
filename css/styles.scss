@@ -9,7 +9,7 @@ $heavy: 700;
 
 body {
   margin:0;
-  padding-top:90px;
+  padding-top:128px;
   font-family: $font;
   background-color: $white;
   color: $blue;
@@ -30,9 +30,13 @@ button {
   border:none;
   padding:10px 20px;
   transition: 0.4s;
+  border-bottom: 2px solid $darkBlue;
+  border-right: 2px solid $darkBlue;
 }
 button:hover {
   background-color: $darkBlue;
+  border-bottom: 2px solid $blue;
+  border-right: 2px solid $blue;
 }
 
 /////////////////////////////////////////////////////////
@@ -42,21 +46,28 @@ header {
   position: fixed;
   width:100%;
   top:0;
-  background-color: $darkBlue;
+  background-color: rgba(0, 86, 128, 0.9);
   color: $white;
   padding:21px 10px;
   text-align: center;
 }
 #title {
+  opacity:1;
   font-weight: bold;
   display: inline-block;
   font-size:2em;
   margin:0;
 }
-#headerStuff {
-  float:right;
-  padding:0px;
-  padding-top:15px;
+#nav {
+  opacity:1;
+  a {
+    color: $white;
+  }
+  a:hover {
+    text-decoration:none;
+    font-weight: $light;
+
+  }
 }
 
 
