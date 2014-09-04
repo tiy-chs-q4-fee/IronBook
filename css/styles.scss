@@ -8,6 +8,8 @@ $light: 400;
 $heavy: 700;
 
 body {
+  margin:0;
+  padding-top:90px;
   font-family: $font;
   background-color: $white;
   color: $blue;
@@ -32,3 +34,35 @@ button {
 button:hover {
   background-color: $darkBlue;
 }
+
+/////////////////////////////////////////////////////////
+/** Header Stylings **/
+header {
+  display: block;
+  position: fixed;
+  width:100%;
+  top:0;
+  background-color: $darkBlue;
+  color: $white;
+  padding:21px 10px;
+  text-align: center;
+}
+#title {
+  font-weight: bold;
+  display: inline-block;
+  font-size:2em;
+  margin:0;
+}
+#headerStuff {
+  float:right;
+  padding:0px;
+  padding-top:15px;
+}
+
+
+
+
+
+
+
+//

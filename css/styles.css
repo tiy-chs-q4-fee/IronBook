@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding-top: 90px;
   font-family: "News Cycle", sans-serif;
   background-color: #e7eaf2;
   color: #007ab5;
@@ -22,3 +24,25 @@ button {
 
 button:hover {
   background-color: #005680; }
+
+/** Header Stylings **/
+header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #005680;
+  color: #e7eaf2;
+  padding: 21px 10px;
+  text-align: center; }
+
+#title {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 2em;
+  margin: 0; }
+
+#headerStuff {
+  float: right;
+  padding: 0px;
+  padding-top: 15px; }
