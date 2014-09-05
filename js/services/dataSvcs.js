@@ -205,6 +205,108 @@ angular.module("ironBookApp.services")
         }
       },
       {
+        name: "Casey Robinson",
+        type: "Back End Engineer",
+        img: "https://avatars0.githubusercontent.com/u/4741780?v=2&s=460",
+        ghUser: "csrobinson86",
+        ghPage: "https://github.com/csrobinson86",
+        email: "csrobinson86@gmail.com",
+        tHandle: "@csrobinson86",
+        tPage: "https://twitter.com/csrobinson86",
+        blog: "https://medium.com/@csrobinson86",
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Lance Putnam",
+        type: "Back End Engineer",
+        img: "https://avatars2.githubusercontent.com/u/8247580?v=2&s=460",
+        ghUser: "lanceorechovesky",
+        ghPage: "https://github.com/lanceorechovesky",
+        email: null,
+        tHandle: null,
+        tPage: null,
+        blog: null,
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Reynolds Ball",
+        type: "Back End Engineer",
+        img: "https://avatars3.githubusercontent.com/u/8247582?v=2&s=460",
+        ghUser: "ReynoldsBall",
+        ghPage: "https://github.com/ReynoldsBall",
+        email: null,
+        tHandle: null,
+        tPage: null,
+        blog: null,
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Belinda Hare",
+        type: "Back End Engineer",
+        img: "https://avatars3.githubusercontent.com/u/8226746?v=2&s=460",
+        ghUser: "belindahare",
+        ghPage: "https://github.com/belindahare",
+        email: null,
+        tHandle: null,
+        tPage: null,
+        blog: null,
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Sam Waller",
+        type: "Back End Engineer",
+        img: "https://avatars0.githubusercontent.com/u/5323974?v=2&s=460",
+        ghUser: "slwaller",
+        ghPage: "https://github.com/slwaller",
+        email: "hockeywalt@yahoo.com",
+        tHandle: null,
+        tPage: null,
+        blog: null,
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Will C. Fisher, Jr.",
+        type: "Back End Engineer",
+        img: "https://avatars1.githubusercontent.com/u/7843322?v=2&s=460",
+        ghUser: "gtlaserbeast",
+        ghPage: "https://github.com/gtlaserbeast",
+        email: null,
+        tHandle: null,
+        tPage: null,
+        blog: null,
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
         name: "Andrew Raynal",
         type: "Staff",
         img: "https://avatars1.githubusercontent.com/u/7121310?v=2&s=460",
@@ -214,6 +316,57 @@ angular.module("ironBookApp.services")
         tHandle: "@andrewraynal",
         tPage: "https://twitter.com/andrewraynal",
         blog: "",
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Nick Bucciareli",
+        type: "Staff",
+        img: "https://avatars0.githubusercontent.com/u/223127?v=2&s=460",
+        ghUser: "nbucciareli",
+        ghPage: "https://github.com/nbucciareli",
+        email: "nick@theironyard.com",
+        tHandle: "@n_bucciarelli",
+        tPage: "https://twitter.com/n_bucciarelli",
+        blog: "",
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Jamie Kingston",
+        type: "Back End Engineer",
+        img: "https://avatars2.githubusercontent.com/u/8235431?v=2&s=460",
+        ghUser: "jgkingston",
+        ghPage: "https://github.com/jgkingston",
+        email: null,
+        tHandle: null,
+        tPage: null,
+        blog: null,
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Sally Kingston",
+        type: "Staff",
+        img: "https://pbs.twimg.com/profile_images/1550987938/235_400x400.JPG",
+        ghUser: null,
+        ghPage: null,
+        email: "sally@theironyard.com",
+        tHandle: '@HouseRulesSally',
+        tPage: "https://twitter.com/HouseRulesSally",
+        blog: "http://sallykingston.me/",
         ironyardLocation: "Charleston",
         about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
         loc: {
