@@ -52,15 +52,14 @@
       <li class="smallCard shadow" ng-repeat="i in studentData | filter : search : strict">
 
         <img class="miniPic" ng-src="{{i.img}}" alt="">
-        <h2 class="coder">
-          {{i.name}}
-        </h2>
-        <p>
-          <span style="color: darkgrey">{{i.type}}</span>
-          <a href="" class="ghUser">{{i.ghUser}}</a>
-          <a href="" class="tHandle">{{i.tHandle}}</a>
-          <a href="#/student/{{$index}}"><button>See more</button></a>
-        </p>
+        <hgroup>
+          <h2 class="coder">
+            {{i.name}}
+          </h2>
+          <h4 class="coderType">{{i.type}}</h4>
+        </hgroup>
+
+        <a href="#/student/{{$index}}"><button>See more</button></a>
       </li>
       <li class="animate-repeat" ng-if="search.length == 0">
       <strong>No results found...</strong>
