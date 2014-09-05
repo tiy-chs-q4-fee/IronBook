@@ -397,9 +397,24 @@ angular.module("ironBookApp.services")
 
     ];
 
+    var updates = [
+    
+    ];
+
+    var getUpdates = function () {
+      return updates;
+    };
+
+    var addUpdate = function (newUpdate) {
+      updates.push(newUpdate);
+      console.log(updates);
+    };
+
     return {
 
-      studentData:studentData
+      studentData:studentData,
+      getUpdates:getUpdates,
+      addUpdate:addUpdate
 
     }
 

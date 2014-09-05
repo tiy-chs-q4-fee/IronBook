@@ -69,12 +69,13 @@
 
   </article>
 
-  <section id="info" class="shadow">
-    <h3>Iron Updates</h3>
+  <section id="info" class="shadow" ng-repeat="update in updates">
+    <h2>Iron Updates</h2>
+    <h3>{{update.title}}</h3>
+    <h5>{{update.author}}</h5>
     <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis obcaecati eos, ipsam esse. Illum corporis obcaecati sunt esse modi laudantium voluptates amet harum debitis impedit. Accusamus incidunt, sint molestias officiis.
+      {{update.content}}
     </div>
-    <img src="http://placehold.it/100x100" alt="">
   </section>
 
 </div>
