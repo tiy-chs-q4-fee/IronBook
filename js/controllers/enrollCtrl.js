@@ -9,7 +9,7 @@ angular.module("ironBookApp.controllers")
       $scope.studentData.push({
 
         name: data.name,
-        img: "blank",
+        img: "http://placehold.it/100x100",
         ghUser: data.gitHubName,
         ghPage: data.gitHubUrl,
         tHandle: data.twitterName,
