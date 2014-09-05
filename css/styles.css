@@ -116,6 +116,45 @@ header {
   padding: 10px;
   border-radius: 5px; }
 
+<<<<<<< HEAD
+.form {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #E7EAF2; }
+  .form .formWelcome {
+    text-align: center;
+    background-color: #D1D1D1;
+    width: 50%;
+    margin: 0 25%; }
+    .form .formWelcome h2 {
+      margin-top: 2%;
+      margin-bottom: 0; }
+    .form .formWelcome p {
+      margin: 0;
+      padding-bottom: 1%; }
+
+.newStudentForm {
+  width: 60%;
+  margin: 1% 19%;
+  background-color: #D1D1D1;
+  text-align: center; }
+  .newStudentForm > div {
+    padding: 1% 2%;
+    text-align: center; }
+    .newStudentForm > div h3, .newStudentForm > div input {
+      display: inline-block; }
+  .newStudentForm .formType, .newStudentForm .formLocation {
+    display: inline-block;
+    width: 40%; }
+
+.formSocial .formGitHubName, .formSocial .formGitHubUrl, .formSocial .formTwitterName, .formSocial .formTwitterUrl {
+  display: inline-block;
+  width: 46%; }
+.formSocial .formAbout h3, .formSocial .formAbout textarea {
+  display: block; }
+
 .largeCard {
   display: inline-block;
   position: relative;
