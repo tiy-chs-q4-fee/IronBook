@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding-top: 128px;
-  font-family: 'News Cycle', sans-serif;
+  font-family: "News Cycle", sans-serif;
   background-color: #E7EAF2;
   color: #007AB5;
   font-weight: 400;
@@ -115,3 +115,20 @@ header {
   margin: 7% 0 0 0;
   padding: 10px;
   border-radius: 5px; }
+
+.largeCard {
+  display: inline-block;
+  position: relative;
+  width: 65%;
+  background-color: #D1D1D1;
+  margin-left: 15%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 5px; }
+  .largeCard img {
+    width: 25%; }
+  .largeCard h2 {
+    display: inline-block;
+    vertical-align: top; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -30,7 +30,7 @@
     <ul>
       <li class="smallCard shadow" ng-repeat="i in studentData | filter : search : strict">
 
-        <img class="miniPic" src="{{i.img}}" alt="">
+        <img class="miniPic" ng-src="{{i.img}}" alt="">
         <h2 class="coder">
           {{i.name}}
         </h2>
