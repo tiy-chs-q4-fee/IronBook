@@ -147,4 +147,65 @@ header {
 
 
 
-//
+//ENROLL SECTION
+
+.form {
+  position: relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  background-color:$white;
+
+  .formWelcome {
+    text-align:center;
+    background-color:$grey;
+    width:50%;
+    margin:0 25%;
+
+    h2 {
+      margin-top:2%;
+      margin-bottom:0;
+    }
+
+    p {
+      margin:0;
+      padding-bottom:1%;
+    }
+  }
+}
+
+.newStudentForm {
+  width:60%;
+  margin:1% 19%;
+  background-color:$grey;
+  text-align:center;
+
+  > div {
+    padding:1% 2%;
+    text-align:center;
+
+    h3, input {
+      display:inline-block;
+    }
+  }
+
+  .formType, .formLocation {
+    display:inline-block;
+    width:40%;
+  }
+}
+
+.formSocial {
+
+  .formGitHubName, .formGitHubUrl, .formTwitterName, .formTwitterUrl {
+    display:inline-block;
+    width:46%;
+  }
+
+  .formAbout {
+
+    h3, textarea {
+      display:block;
+    }
+  }
+}
