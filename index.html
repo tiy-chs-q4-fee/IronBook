@@ -9,11 +9,11 @@
 <body ng-app="ironBookApp">
   <!-- HEADER TO REMAIN ON EACH VIEW -->
   <header>
-
+	<a href="#/student"><button>Go to students</button></a>
   </header>
 
   <!-- DIFFERENT VIEWS RENDER BELOW -->
-  <div class=""ng-view>
+  <div class="profileCards"ng-view>
 
   </div ng-view>
 
@@ -21,6 +21,9 @@
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/app.js"></script>
 <script src="js/services/dataSvcs.js"></script>
 <script src="js/controllers/homeCtrl.js"></script>
