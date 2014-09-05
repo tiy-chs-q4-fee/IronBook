@@ -17,6 +17,13 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
         controller:"studentCtrl"
 
       })
+      
+      .when("/student/:indexOfStudent", {
+
+        templateUrl:"views/student.html",
+        controller:"studentCtrl"
+
+      })
 
       .when("/enroll", {
 
