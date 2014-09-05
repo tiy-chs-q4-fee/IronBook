@@ -1,16 +1,41 @@
 <div id="homeBox">
-  <h1>HELLO WORLD</h1>
+  <nav id="homeNav" class="shadow rect">
+
+    <form action="" ng-submit="">
+      <label for="courseFilter">
+        Filter by Course
+        <select name="cFilter" id="courseFilter" ng-model="search.type">
+          <option value="">
+
+          </option>
+          <option value="Front End Engineer">
+            Front End Engineers
+          </option>
+          <option value="Back End Engineer">
+            Back End Engineers
+          </option>
+          <option value="Staff">
+            Staff
+          </option>
+        </select>
+      </label>
+
+      <input type="text" placeholder="Search by Name" ng-model="search.name">
+    </form>
+
+  </nav>
 
   <article id="main">
 
     <ul>
-      <li class="smallCard shadow" ng-repeat="i in studentData">
+      <li class="smallCard shadow" ng-repeat="i in studentData | filter : search : strict">
 
         <img class="miniPic" src="{{i.img}}" alt="">
         <h2 class="coder">
           {{i.name}}
         </h2>
         <p>
+          <span style="color: darkgrey">{{i.type}}</span>
           <a href="" class="ghUser">{{i.ghUser}}</a>
           <a href="" class="tHandle">{{i.tHandle}}</a>
         </p>
@@ -20,7 +45,11 @@
   </article>
 
   <section id="info" class="shadow">
-    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quis, vel! Sit excepturi, sint corporis ea praesentium similique animi dolorem repellendus maxime odit saepe sed totam, quia aut, tempora quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquam, quia, vero in dignissimos officia voluptate vel perspiciatis praesentium labore ut sit amet pariatur voluptas assumenda, dolor consectetur repellendus expedita.</h1>
+    <h3>Iron Updates</h3>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis obcaecati eos, ipsam esse. Illum corporis obcaecati sunt esse modi laudantium voluptates amet harum debitis impedit. Accusamus incidunt, sint molestias officiis.
+    </div>
+    <img src="http://placehold.it/100x100" alt="">
   </section>
 
 </div>

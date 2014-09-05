@@ -5,6 +5,7 @@ angular.module("ironBookApp.services")
     var studentData = [
     	{
     		name: "Ryan Huber",
+        type: "Front End Engineer",
     		img: "https://avatars2.githubusercontent.com/u/8245890?v=2&s=460",
     		ghUser: "rphuber",
     		ghPage: "https://github.com/rphuber",
@@ -20,6 +21,7 @@ angular.module("ironBookApp.services")
     	},
     	{
     		name: "Brendan Quinn",
+        type: "Front End Engineer",
     		img: "https://avatars0.githubusercontent.com/u/6947446?v=2&s=400",
     		ghUser: "Mathdrquinn",
     		ghPage: "https://github.com/Mathdrquinn",
@@ -35,6 +37,7 @@ angular.module("ironBookApp.services")
     	},
     	{
     		name: "Cory Figueroa",
+        type: "Front End Engineer",
     		img: "https://avatars0.githubusercontent.com/u/8238249?v=2&s=400",
     		ghUser: "CTFigueroa",
     		ghPage: "https://github.com/CTFigueroa",
@@ -50,6 +53,7 @@ angular.module("ironBookApp.services")
     	},
     	{
     		name: "Will Gallop",
+        type: "Front End Engineer",
     		img: "https://avatars2.githubusercontent.com/u/7799207?v=2&s=400",
     		ghUser: "wgallop99",
     		ghPage: "https://github.com/wgallop99",
@@ -66,6 +70,7 @@ angular.module("ironBookApp.services")
     	},
     	{
     		name: "Charles Nguyen",
+        type: "Front End Engineer",
     		img: "https://avatars2.githubusercontent.com/u/8241367?v=2&s=400",
     		ghUser: "lapty",
     		ghPage: "https://github.com/lapty",
@@ -79,7 +84,24 @@ angular.module("ironBookApp.services")
     			long: null,
     			lat: null
     		}
-    	}
+    	},
+      {
+        name: "Calvin Webster",
+        type: "Staff",
+        img: "https://avatars0.githubusercontent.com/u/115030?v=2&s=460",
+        ghUser: "calweb",
+        ghPage: "https://github.com/calweb",
+        email: "calvin@theironyard.com",
+        tHandle: "@calweb",
+        tPage: "https://twitter.com/calweb",
+        blog: "",
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      }
 
 
 
