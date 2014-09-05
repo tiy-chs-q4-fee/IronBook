@@ -58,13 +58,13 @@
 
   </article>
 
-  <section id="info" class="shadow" ng-repeat="update in updates">
-    <h2>Iron Updates</h2>
-    <h3>{{update.title}}</h3>
-    <h5>{{update.author}}</h5>
-    <div>
-      {{update.content}}
-    </div>
-  </section>
+  <ul id="info" class="shadow">
+    <h2>Upcoming Events</h2>
+    <li ng-repeat="update in updates | dateFilter">
+      <h3>{{update.title}}</h3>
+      <h5>{{update.eDt}} @ {{update.time}}</h5>
+      <p>{{update.content}}</p>
+    </li>
+  </ul>
 
 </div>
