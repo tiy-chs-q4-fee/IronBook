@@ -141,6 +141,26 @@ header {
   border-radius:5px;
 }
 
+//STUDENT SECTION
+ .largeCard {
+    display:inline-block;
+    position: relative;
+    width:65%;
+    background-color:$grey;
+    margin-left:15%;
+    margin-top: 5%;
+    padding:10px;
+    border-radius:5px;
+
+    img {
+      width: 25%;
+    }
+
+    h2 {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
 
 
 

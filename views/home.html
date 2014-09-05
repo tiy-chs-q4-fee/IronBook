@@ -30,7 +30,7 @@
     <ul>
       <li class="smallCard shadow" ng-repeat="i in studentData | filter : search : strict">
 
-        <img class="miniPic" src="{{i.img}}" alt="">
+        <img class="miniPic" ng-src="{{i.img}}" alt="">
         <h2 class="coder">
           {{i.name}}
         </h2>
@@ -38,6 +38,7 @@
           <span style="color: darkgrey">{{i.type}}</span>
           <a href="" class="ghUser">{{i.ghUser}}</a>
           <a href="" class="tHandle">{{i.tHandle}}</a>
+          <a href="#/student/{{$index}}"><button>See more</button></a>
         </p>
       </li>
     </ul>
@@ -53,4 +54,3 @@
   </section>
 
 </div>
->>>>>>> 0d2a2e18ac88553722636ee63bae5ef23d5b0f9e
