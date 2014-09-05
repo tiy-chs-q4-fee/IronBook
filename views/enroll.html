@@ -1,53 +1,64 @@
-<h2>Welcome to the Iron Yard</h2>
-<p>We're happy to have you.</p>
-<form class="newStudentForm" ng-submit="newStudent(student)">
+<section class="form">
+  <h2>Welcome to the Iron Yard</h2>
+  <p><em>We're happy to have you.</em></p>
+  <form class="newStudentForm" ng-submit="newStudent(student)">
 
-  <div class="formName">
-    <h3>Name:</h3>
-    <input type="text" placeholder="Type Name Here" ng-model="student.name">
-  </div>
-
-  <div class="formLocation">
-    <h3>Campus Location:</h3>
-    <select name="" class="locationSelect" ng-model="student.location">
-      <option value="charleston">Charleston</option>
-      <option value="greenville">Greenville</option>
-    </select>
-  </div>
-
-  <div class="formSocial">
-
-    <div class="formGitHubName">
-      <h3>GitHub Name:</h3>
-      <input type="text" placeholder="Type GitHub Name Here" ng-model="student.gitHubName">
+    <div class="formName">
+      <h3>Name:</h3>
+      <input type="text" placeholder="Type Name Here" ng-model="student.name">
     </div>
 
-    <div class="formGitHubUrl">
-      <h3>GitHub URL:</h3>
-      <input type="text" placeholder="Type GitHub URL Here" ng-model="student.gitHubUrl">
+    <div class="formType">
+      <h3>Category:</h3>
+      <select ng-model="student.category">
+        <option value="front-end">Front End Engineer</option>
+        <option value="back-end">Back End Engineer</option>
+        <option value="staff">Staff</option>
+      </select>
     </div>
 
-    <div class="formTwitterName">
-      <h3>Twitter Handle:</h3>
-      <input type="text" placeholder="Type Twitter Name Here" ng-model="student.twitterName">
+    <div class="formLocation">
+      <h3>Campus Location:</h3>
+      <select class="locationSelect" ng-model="student.location">
+        <option value="charleston">Charleston</option>
+        <option value="greenville">Greenville</option>
+      </select>
     </div>
 
-    <div class="formTwitterUrl">
-      <h3>Twitter URL:</h3>
-      <input type="text" placeholder="Type Twitter URL Here" ng-model="student.twitterUrl">
+    <div class="formSocial">
+
+      <div class="formGitHubName">
+        <h3>GitHub Name:</h3>
+        <input type="text" placeholder="Type GitHub Name Here" ng-model="student.gitHubName">
+      </div>
+
+      <div class="formGitHubUrl">
+        <h3>GitHub URL:</h3>
+        <input type="text" placeholder="Type GitHub URL Here" ng-model="student.gitHubUrl">
+      </div>
+
+      <div class="formTwitterName">
+        <h3>Twitter Handle:</h3>
+        <input type="text" placeholder="Type Twitter Name Here" ng-model="student.twitterName">
+      </div>
+
+      <div class="formTwitterUrl">
+        <h3>Twitter URL:</h3>
+        <input type="text" placeholder="Type Twitter URL Here" ng-model="student.twitterUrl">
+      </div>
+
+      <div class="formBlogUrl">
+        <h3>Blog URL:</h3>
+        <input type="text" placeholder="Type Blog URL Here" ng-model="student.blogUrl">
+      </div>
+
     </div>
 
-    <div class="formBlogUrl">
-      <h3>Blog URL:</h3>
-      <input type="text" placeholder="Type Blog URL Here" ng-model="student.blogUrl">
+    <div class="formAbout">
+      <h3>About You:</h3>
+      <textarea name="" id="" cols="30" rows="10" ng-model="student.about"></textarea>
     </div>
 
-  </div>
-
-  <div class="formAbout">
-    <h3>About You:</h3>
-    <textarea name="" id="" cols="30" rows="10" ng-model="student.about"></textarea>
-  </div>
-
-  <input type="submit">
-</form>
+    <input type="submit">
+  </form>
+</section>
