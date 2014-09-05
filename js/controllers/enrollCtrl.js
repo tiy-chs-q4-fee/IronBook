@@ -9,6 +9,7 @@ angular.module("ironBookApp.controllers")
       $scope.studentData.push({
 
         name: data.name,
+        type: data.category,
         img: "http://placehold.it/100x100",
         ghUser: data.gitHubName,
         ghPage: data.gitHubUrl,
@@ -22,5 +23,8 @@ angular.module("ironBookApp.controllers")
           lat: null
         }
       });
+
+      $scope.student = {};
+
     };
   });

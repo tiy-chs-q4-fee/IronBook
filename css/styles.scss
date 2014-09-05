@@ -47,7 +47,7 @@ li {
   list-style-type:none;
 }
 .shadow {
-  box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.8);
+  box-shadow: 2px 2px 2px 0px rgba(68, 68, 68, 0.8);
 }
 
 .rect {
@@ -94,10 +94,12 @@ header {
 }
 #homeNav {
   display:block;
-  position:relative;
+  position:fixed;
+  width:99%;
   margin:10px 0;
   padding:5px;
   text-align:right;
+  z-index:99;
 
 }
 
@@ -105,6 +107,7 @@ header {
 #main {
   display: inline-block;
   position:relative;
+  margin-top:5%;
   width:65%;
   /* height: 575px;
   overflow-y:scroll; */
@@ -115,6 +118,7 @@ header {
     background-color:$grey;
     margin:10px;
     padding:10px;
+    border-radius:5px;
   }
   .coder {
     display: inline-block;
@@ -132,8 +136,9 @@ header {
   vertical-align:top;
   width:30%;
   background-color:$grey;
-  margin:25px 0 0 0;
+  margin:7% 0 0 0;
   padding:10px;
+  border-radius:5px;
 }
 
 

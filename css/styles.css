@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding-top: 128px;
-  font-family: "News Cycle", sans-serif;
-  background-color: #e7eaf2;
-  color: #007ab5;
+  font-family: 'News Cycle', sans-serif;
+  background-color: #E7EAF2;
+  color: #007AB5;
   font-weight: 400;
   background-image: url(../images/logo.png);
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #007ab5;
+  color: #007AB5;
   transition: 0.4s; }
 
 a:hover {
@@ -21,8 +21,8 @@ a:hover {
   font-weight: 700; }
 
 button {
-  color: #e7eaf2;
-  background-color: #007ab5;
+  color: #E7EAF2;
+  background-color: #007AB5;
   border: none;
   padding: 10px 20px;
   transition: 0.4s;
@@ -31,17 +31,17 @@ button {
 
 button:hover {
   background-color: #005680;
-  border-bottom: 2px solid #007ab5;
-  border-right: 2px solid #007ab5; }
+  border-bottom: 2px solid #007AB5;
+  border-right: 2px solid #007AB5; }
 
 li {
   list-style-type: none; }
 
 .shadow {
-  box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.8); }
+  box-shadow: 2px 2px 2px 0px rgba(68, 68, 68, 0.8); }
 
 .rect {
-  background-color: #d1d1d1; }
+  background-color: #D1D1D1; }
 
 /** Header Stylings **/
 header {
@@ -51,7 +51,7 @@ header {
   width: 100%;
   top: 0;
   background-color: rgba(0, 86, 128, 0.9);
-  color: #e7eaf2;
+  color: #E7EAF2;
   padding: 21px 10px;
   text-align: center; }
 
@@ -65,7 +65,7 @@ header {
 #nav {
   opacity: 1; }
   #nav a {
-    color: #e7eaf2; }
+    color: #E7EAF2; }
   #nav a:hover {
     text-decoration: none;
     font-weight: 400; }
@@ -78,14 +78,17 @@ header {
 
 #homeNav {
   display: block;
-  position: relative;
+  position: fixed;
+  width: 99%;
   margin: 10px 0;
   padding: 5px;
-  text-align: right; }
+  text-align: right;
+  z-index: 99; }
 
 #main {
   display: inline-block;
   position: relative;
+  margin-top: 5%;
   width: 65%;
   /* height: 575px;
   overflow-y:scroll; */ }
@@ -93,9 +96,10 @@ header {
     display: inline-block;
     position: relative;
     width: 28%;
-    background-color: #d1d1d1;
+    background-color: #D1D1D1;
     margin: 10px;
-    padding: 10px; }
+    padding: 10px;
+    border-radius: 5px; }
   #main .coder {
     display: inline-block; }
   #main .miniPic {
@@ -107,6 +111,7 @@ header {
   clear: right;
   vertical-align: top;
   width: 30%;
-  background-color: #d1d1d1;
-  margin: 25px 0 0 0;
-  padding: 10px; }
+  background-color: #D1D1D1;
+  margin: 7% 0 0 0;
+  padding: 10px;
+  border-radius: 5px; }
