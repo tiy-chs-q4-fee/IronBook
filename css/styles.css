@@ -4,7 +4,12 @@ body {
   font-family: "News Cycle", sans-serif;
   background-color: #e7eaf2;
   color: #007ab5;
-  font-weight: 400; }
+  font-weight: 400;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 100px; }
 
 a {
   text-decoration: none;
@@ -29,8 +34,18 @@ button:hover {
   border-bottom: 2px solid #007ab5;
   border-right: 2px solid #007ab5; }
 
+li {
+  list-style-type: none; }
+
+.shadow {
+  box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.8); }
+
+.rect {
+  background-color: #d1d1d1; }
+
 /** Header Stylings **/
 header {
+  z-index: 500;
   display: block;
   position: fixed;
   width: 100%;
@@ -54,3 +69,44 @@ header {
   #nav a:hover {
     text-decoration: none;
     font-weight: 400; }
+
+/** Home Stylings **/
+#homeBox {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+#homeNav {
+  display: block;
+  position: relative;
+  margin: 10px 0;
+  padding: 5px;
+  text-align: right; }
+
+#main {
+  display: inline-block;
+  position: relative;
+  width: 65%;
+  /* height: 575px;
+  overflow-y:scroll; */ }
+  #main .smallCard {
+    display: inline-block;
+    position: relative;
+    width: 28%;
+    background-color: #d1d1d1;
+    margin: 10px;
+    padding: 10px; }
+  #main .coder {
+    display: inline-block; }
+  #main .miniPic {
+    width: 50px; }
+
+#info {
+  display: inline-block;
+  position: relative;
+  clear: right;
+  vertical-align: top;
+  width: 30%;
+  background-color: #d1d1d1;
+  margin: 25px 0 0 0;
+  padding: 10px; }
