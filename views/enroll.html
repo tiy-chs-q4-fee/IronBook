@@ -10,7 +10,11 @@
 
     <div class="formType">
       <h3>Category:</h3>
-      <input type="text" placeholder="Type Name Here" ng-model="student.category">
+      <select ng-model="student.category">
+        <option value="front-end">Front End Engineer</option>
+        <option value="back-end">Back End Engineer</option>
+        <option value="staff">Staff</option>
+      </select>
     </div>
 
     <div class="formLocation">
