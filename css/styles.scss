@@ -14,6 +14,11 @@ body {
   background-color: $white;
   color: $blue;
   font-weight: $light;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position-x: 50%;
+  background-position-y: 100px;
 }
 a {
   text-decoration:none;
@@ -38,10 +43,17 @@ button:hover {
   border-bottom: 2px solid $blue;
   border-right: 2px solid $blue;
 }
+li {
+  list-style-type:none;
+}
+.shadow {
+  box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.8);
+}
 
 /////////////////////////////////////////////////////////
 /** Header Stylings **/
 header {
+  z-index:500;
   display: block;
   position: fixed;
   width:100%;
@@ -68,6 +80,49 @@ header {
     font-weight: $light;
 
   }
+}
+
+/////////////////////////////////////////////////////////
+/** Home Stylings **/
+#homeBox {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+//MAIN SECTION
+#main {
+  display: inline-block;
+  position:relative;
+  width:65%;
+  height: 575px;
+  overflow-y:scroll;
+  .smallCard {
+    display:inline-block;
+    position: relative;
+    width:30%;
+    background-color:$grey;
+    margin:10px;
+    padding:10px;
+  }
+  .coder {
+    display: inline-block;
+  }
+  .miniPic {
+    width:50px;
+  }
+}
+
+//INFO SECTION
+#info {
+  display: inline-block;
+  position:relative;
+  clear:right;
+  vertical-align:top;
+  width:27%;
+  background-color:$grey;
+  margin:40px;
+  padding:10px;
 }
 
 

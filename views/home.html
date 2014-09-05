@@ -1,2 +1,26 @@
-<h1>HELLO WORLD</h1>
-<h2>{{studentData[0].title}}</h2>
+<div id="homeBox">
+  <h1>HELLO WORLD</h1>
+
+  <article id="main">
+
+    <ul>
+      <li class="smallCard shadow" ng-repeat="i in studentData">
+
+        <img class="miniPic" src="{{i.img}}" alt="">
+        <h2 class="coder">
+          {{i.name}}
+        </h2>
+        <p>
+          <a href="" class="ghUser">{{i.ghUser}}</a>
+          <a href="" class="tHandle">{{i.tHandle}}</a>
+        </p>
+      </li>
+    </ul>
+
+  </article>
+
+  <section id="info" class="shadow">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quis, vel! Sit excepturi, sint corporis ea praesentium similique animi dolorem repellendus maxime odit saepe sed totam, quia aut, tempora quas.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aliquam, quia, vero in dignissimos officia voluptate vel perspiciatis praesentium labore ut sit amet pariatur voluptas assumenda, dolor consectetur repellendus expedita.</h1>
+  </section>
+
+</div>
