@@ -8,10 +8,17 @@ $light: 400;
 $heavy: 700;
 
 body {
+  margin:0;
+  padding-top:128px;
   font-family: $font;
   background-color: $white;
   color: $blue;
   font-weight: $light;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 100px;
 }
 a {
   text-decoration:none;
@@ -28,7 +35,111 @@ button {
   border:none;
   padding:10px 20px;
   transition: 0.4s;
+  border-bottom: 2px solid $darkBlue;
+  border-right: 2px solid $darkBlue;
 }
 button:hover {
   background-color: $darkBlue;
+  border-bottom: 2px solid $blue;
+  border-right: 2px solid $blue;
 }
+li {
+  list-style-type:none;
+}
+.shadow {
+  box-shadow: 10px 10px 5px 0px rgba(68, 68, 68, 0.8);
+}
+
+.rect {
+  background-color:$grey;
+}
+/////////////////////////////////////////////////////////
+/** Header Stylings **/
+header {
+  z-index:500;
+  display: block;
+  position: fixed;
+  width:100%;
+  top:0;
+  background-color: rgba(0, 86, 128, 0.9);
+  color: $white;
+  padding:21px 10px;
+  text-align: center;
+}
+#title {
+  opacity:1;
+  font-weight: bold;
+  display: inline-block;
+  font-size:2em;
+  margin:0;
+}
+#nav {
+  opacity:1;
+  a {
+    color: $white;
+  }
+  a:hover {
+    text-decoration:none;
+    font-weight: $light;
+
+  }
+}
+
+/////////////////////////////////////////////////////////
+/** Home Stylings **/
+#homeBox {
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#homeNav {
+  display:block;
+  position:relative;
+  margin:10px 0;
+  padding:5px;
+  text-align:right;
+
+}
+
+//MAIN SECTION
+#main {
+  display: inline-block;
+  position:relative;
+  width:65%;
+  /* height: 575px;
+  overflow-y:scroll; */
+  .smallCard {
+    display:inline-block;
+    position: relative;
+    width:28%;
+    background-color:$grey;
+    margin:10px;
+    padding:10px;
+  }
+  .coder {
+    display: inline-block;
+  }
+  .miniPic {
+    width:50px;
+  }
+}
+
+//INFO SECTION
+#info {
+  display: inline-block;
+  position:relative;
+  clear:right;
+  vertical-align:top;
+  width:30%;
+  background-color:$grey;
+  margin:25px 0 0 0;
+  padding:10px;
+}
+
+
+
+
+
+
+
+//
