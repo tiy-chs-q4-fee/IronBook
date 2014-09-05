@@ -23,5 +23,8 @@ angular.module("ironBookApp.controllers")
           lat: null
         }
       });
+
+      $scope.student = {};
+
     };
   });
