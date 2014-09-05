@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding-top: 128px;
   font-family: "News Cycle", sans-serif;
-  background-color: #E7EAF2;
-  color: #007AB5;
+  background-color: #e7eaf2;
+  color: #007ab5;
   font-weight: 400;
   background-image: url(../images/logo.png);
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #007AB5;
+  color: #007ab5;
   transition: 0.4s; }
 
 a:hover {
@@ -21,8 +21,8 @@ a:hover {
   font-weight: 700; }
 
 button {
-  color: #E7EAF2;
-  background-color: #007AB5;
+  color: #e7eaf2;
+  background-color: #007ab5;
   border: none;
   padding: 10px 20px;
   transition: 0.4s;
@@ -31,8 +31,8 @@ button {
 
 button:hover {
   background-color: #005680;
-  border-bottom: 2px solid #007AB5;
-  border-right: 2px solid #007AB5; }
+  border-bottom: 2px solid #007ab5;
+  border-right: 2px solid #007ab5; }
 
 ul {
   padding: 0px;
@@ -45,7 +45,7 @@ li {
   box-shadow: 2px 2px 2px 0px rgba(68, 68, 68, 0.8); }
 
 .rect {
-  background-color: #D1D1D1; }
+  background-color: #d1d1d1; }
 
 /** Header Stylings **/
 header {
@@ -55,7 +55,7 @@ header {
   width: 100%;
   top: 0;
   background-color: rgba(0, 86, 128, 0.9);
-  color: #E7EAF2;
+  color: #e7eaf2;
   padding: 21px 10px;
   text-align: center; }
 
@@ -69,7 +69,7 @@ header {
 #nav {
   opacity: 1; }
   #nav a {
-    color: #E7EAF2; }
+    color: #e7eaf2; }
   #nav a:hover {
     text-decoration: none;
     font-weight: 400; }
@@ -100,35 +100,55 @@ header {
     display: inline-block;
     position: relative;
     width: 28%;
-    background-color: #D1D1D1;
+    background-color: #d1d1d1;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px; }
-  #main .coder {
-    display: inline-block; }
+    border-radius: 3px;
+    text-align: center; }
   #main .miniPic {
-    width: 50px; }
+    width: 150px;
+    clear: right; }
+  #main hgroup {
+    margin: 5px 0 10px 0; }
+  #main .coder {
+    margin: 0; }
+  #main .coderType {
+    margin: 0; }
 
 #info {
   display: inline-block;
   position: relative;
   vertical-align: top;
   width: 30%;
-  background-color: #D1D1D1;
-  margin: 10px; 0 0 0;
+  background-color: #d1d1d1;
+  margin: 7% 0 0 0;
   padding: 10px;
   border-radius: 5px; }
 
-<<<<<<< HEAD
+.largeCard {
+  display: inline-block;
+  position: relative;
+  width: 65%;
+  background-color: #d1d1d1;
+  margin-left: 15%;
+  margin-top: 5%;
+  padding: 10px;
+  border-radius: 5px; }
+  .largeCard img {
+    width: 25%; }
+  .largeCard h2 {
+    display: inline-block;
+    vertical-align: top; }
+
 .form {
   position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #E7EAF2; }
+  background-color: #e7eaf2; }
   .form .formWelcome {
     text-align: center;
-    background-color: #D1D1D1;
+    background-color: #d1d1d1;
     width: 50%;
     margin: 0 25%; }
     .form .formWelcome h2 {
@@ -141,7 +161,7 @@ header {
 .newStudentForm {
   width: 60%;
   margin: 1% 19%;
-  background-color: #D1D1D1;
+  background-color: #d1d1d1;
   text-align: center; }
   .newStudentForm > div {
     padding: 1% 2%;
@@ -157,20 +177,3 @@ header {
   width: 46%; }
 .formSocial .formAbout h3, .formSocial .formAbout textarea {
   display: block; }
-
-.largeCard {
-  display: inline-block;
-  position: relative;
-  width: 65%;
-  background-color: #D1D1D1;
-  margin-left: 15%;
-  margin-top: 5%;
-  padding: 10px;
-  border-radius: 5px; }
-  .largeCard img {
-    width: 25%; }
-  .largeCard h2 {
-    display: inline-block;
-    vertical-align: top; }
-
-/*# sourceMappingURL=styles.css.map */
