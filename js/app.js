@@ -17,7 +17,7 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
         controller:"studentCtrl"
 
       })
-      
+
       .when("/student/:indexOfStudent", {
 
         templateUrl:"views/student.html",
@@ -30,6 +30,12 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
         templateUrl:"views/enroll.html",
         controller:"enrollCtrl"
 
+      })
+
+      .when("/news", {
+
+        templateUrl:"views/news.html",
+        controller:"newsCtrl"
       })
 
       .when("/notFound", {
@@ -49,4 +55,3 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
 
 angular.module("ironBookApp.controllers", []);
 angular.module("ironBookApp.services", []);
-
