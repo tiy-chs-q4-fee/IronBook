@@ -4,6 +4,9 @@ angular.module("ironBookApp.controllers")
 
     $scope.studentData = dataSvcs.studentData;
 
+    $scope.updates = dataSvcs.getUpdates();
+
+
     // $scope.newStudent = function(data) {
     //
     //   $scope.studentData.push({
