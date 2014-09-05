@@ -1,4 +1,4 @@
-angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookApp.services"])
+angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookApp.services", "ironBookApp.filters"])
 
   .config(function($routeProvider) {
 
@@ -32,12 +32,6 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
 
       })
 
-      .when("/news", {
-
-        templateUrl:"views/news.html",
-        controller:"newsCtrl"
-      })
-
       .when("/notFound", {
 
         templateUrl:"views/home.html",
@@ -55,3 +49,4 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
 
 angular.module("ironBookApp.controllers", []);
 angular.module("ironBookApp.services", []);
+angular.module("ironBookApp.filters", []);

@@ -397,12 +397,33 @@ angular.module("ironBookApp.services")
 
     ];
 
-    var updates = [
-    
+    var updates = [{
+      title:"Iron Pints",
+      dt:"Mon Sep 04 2014 16:00:00 GMT-0400",
+      eDt: "Sep 4th, 2014",
+      time:"4:00 pm",
+      content:"Should be hidden"
+    },
+    {
+      title:"Iron Pints",
+      dt:"Fri Sep 05 2014 16:00:00 GMT-0400",
+      eDt: "Sep 5th, 2014",
+      time:"4:00 pm",
+      content:"Let's All Go Grab a Beer!"
+    },
+    {
+      title:"Iron Pints 2",
+      dt:"Sun Sep 07 2014 00:00:00 GMT-0400",
+      eDt: "Sep 7th, 2014",
+      time:"6:00 pm",
+      content:"Yay!"
+    }
     ];
 
+    var today = new Date();
+
     var getUpdates = function () {
-      return updates;
+         return updates;
     };
 
     var addUpdate = function (newUpdate) {
