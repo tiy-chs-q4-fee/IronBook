@@ -2,6 +2,27 @@
   <nav id="homeNav" class="shadow rect">
 
     <form action="" ng-submit="">
+      <!-- <label for="sort">
+        Sort
+        <select name="sorter" id="courseFilter" ng-model="search.type">
+          <option value="">
+
+          </option>
+          <option value="Name_a-z" ng-click="category = 'name'; reverse=false">
+            Name A-Z
+          </option>
+          <option value="name_z-a" ng-click="category = 'name'; reverse=!false">
+            Name Z-A
+          </option>
+          <option value="type_a-z" ng-click="category = 'type'; reverse=false">
+            Type A-Z
+          </option>
+          <option value="type_z-a" ng-click="category = 'name'; reverse=!false">
+            Type Z-A
+          </option>
+        </select>
+      </label> -->
+
       <label for="courseFilter">
         Filter by Course
         <select name="cFilter" id="courseFilter" ng-model="search.type">
@@ -40,6 +61,9 @@
           <a href="" class="tHandle">{{i.tHandle}}</a>
         </p>
       </li>
+      <li class="animate-repeat" ng-if="results.length == 0">
+      <strong>No results found...</strong>
+    </li>
     </ul>
 
   </article>
