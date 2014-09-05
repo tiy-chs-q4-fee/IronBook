@@ -27,4 +27,8 @@ angular.module("ironBookApp.controllers")
       $scope.student = {};
 
     };
+
+    $scope.toHome = function () {
+    $location.path("/");
+  };
   });
