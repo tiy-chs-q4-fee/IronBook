@@ -5,6 +5,20 @@ angular.module("ironBookApp.controllers")
     $scope.studentData = dataSvcs.studentData;
 
     $scope.updates = dataSvcs.getUpdates();
+    var length = $scope.studentData.length;
+    var n = 0;
+
+    $scope.findStudent = function (x) {
+      console.log('something');
+      var y = $scope.studentData;
+      console.log(y);
+      for (var i = 0; i < length; i++) {
+        if (x === y[i].name) {
+          console.log(i);
+          return i;
+        }
+      };
+    };
 
 
     // $scope.newStudent = function(data) {
