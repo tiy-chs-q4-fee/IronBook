@@ -1,3 +1,16 @@
+<div ng-controller="CarouselDemoCtrl">
+	<div style="height: 300px">
+		<carousel interval="myInterval">
+			<slide ng-repeat="i in studentData" active="slide.active">
+				<img ng-src="{{i.img}}" style="margin:auto; height: 200px;">
+				<div class="carousel-caption">
+					<h4>{{i.name}}</h4>
+				</div>
+			</slide>
+		</carousel>
+	</div>
+</div>
+
 
 <div>
 	<div class="largeCard">

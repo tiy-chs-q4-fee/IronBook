@@ -401,14 +401,14 @@ angular.module("ironBookApp.services")
       title:"Iron Pints",
       dt:"Mon Sep 04 2014 16:00:00 GMT-0400",
       eDt: "Sep 4th, 2014",
-      time:"4:00 pm",
+      time:"4:00 - 6:00pm",
       content:"Should be hidden"
     },
     {
       title:"Iron Pints",
-      dt:"Fri Sep 05 2014 16:00:00 GMT-0400",
+      dt:"Fri Sep 05 2014 18:00:00 GMT-0400",
       eDt: "Sep 5th, 2014",
-      time:"4:00 pm",
+      time:"4:00 - 6:00pm",
       content:"Let's All Go Grab a Beer!"
     },
     {
