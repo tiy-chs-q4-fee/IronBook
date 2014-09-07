@@ -7,10 +7,6 @@ angular.module("ironBookApp.controllers")
 
     $scope.CarouselDemoCtrl = function() {
       $scope.myInterval = 4000;
-      var slides = $scope.slides = [];
-      $scope.addSlide = function() {
-        var newWidth = 600 + slides.length;
-      };
     }
 
   });
