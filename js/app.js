@@ -1,4 +1,4 @@
-angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookApp.services", "ironBookApp.filters"])
+angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookApp.services", "ironBookApp.filters", "ui.bootstrap"])
 
   .config(function($routeProvider) {
 

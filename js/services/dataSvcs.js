@@ -51,6 +51,40 @@ angular.module("ironBookApp.services")
     			lat: null
     		}
     	},
+      {
+        name: "Chris Otten",
+        type: "Front End Engineer",
+        img: "https://avatars3.githubusercontent.com/u/8238886?v=2&s=460",
+        ghUser: "crotten",
+        ghPage: "https://github.com/crotten",
+        email: "Christopher.R.Otten@gmail.com",
+        tHandle: "@ChristopheOtten",
+        tPage: "https://twitter.com/ChristopheOtten",
+        blog: "",
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
+      {
+        name: "Ansley Jones",
+        type: "Front End Engineer",
+        img: "https://avatars2.githubusercontent.com/u/8247044?v=2&s=460",
+        ghUser: "ansleyjones",
+        ghPage: "https://github.com/ansleyjones",
+        email: null,
+        tHandle: null,
+        tPage: null,
+        blog: "",
+        ironyardLocation: "Charleston",
+        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
+        loc: {
+          long: null,
+          lat: null
+        }
+      },
     	{
     		name: "Will Gallop",
         type: "Front End Engineer",
@@ -94,23 +128,6 @@ angular.module("ironBookApp.services")
         email: null,
         tHandle: null,
         tPage: "",
-        blog: "",
-        ironyardLocation: "Charleston",
-        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
-        loc: {
-          long: null,
-          lat: null
-        }
-      },
-      {
-        name: "Ansley Jones",
-        type: "Front End Engineer",
-        img: "https://avatars2.githubusercontent.com/u/8247044?v=2&s=460",
-        ghUser: "ansleyjones",
-        ghPage: "https://github.com/ansleyjones",
-        email: null,
-        tHandle: null,
-        tPage: null,
         blog: "",
         ironyardLocation: "Charleston",
         about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
@@ -179,23 +196,6 @@ angular.module("ironBookApp.services")
         email: null,
         tHandle: null,
         tPage: null,
-        blog: "",
-        ironyardLocation: "Charleston",
-        about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
-        loc: {
-          long: null,
-          lat: null
-        }
-      },
-      {
-        name: "Chris Otten",
-        type: "Front End Engineer",
-        img: "https://avatars3.githubusercontent.com/u/8238886?v=2&s=460",
-        ghUser: "crotten",
-        ghPage: "https://github.com/crotten",
-        email: "Christopher.R.Otten@gmail.com",
-        tHandle: "@ChristopheOtten",
-        tPage: "https://twitter.com/ChristopheOtten",
         blog: "",
         ironyardLocation: "Charleston",
         about: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit vero pariatur beatae asperiores. Ipsam reprehenderit consequuntur quaerat, pariatur aspernatur aut minus maxime harum voluptates, neque, fugiat. Accusamus harum obcaecati quos.",
@@ -397,26 +397,20 @@ angular.module("ironBookApp.services")
 
     ];
 
-    var updates = [{
-      title:"Iron Pints",
-      dt:"Mon Sep 04 2014 16:00:00 GMT-0400",
-      eDt: "Sep 4th, 2014",
-      time:"4:00 pm",
-      content:"Should be hidden"
+    var updates = [
+    {
+      title:"Happy Hour With Robert Half",
+      dt:"Tue Sep 09 2014 18:00:00 GMT-0400",
+      eDt: "Sep 9th, 2014",
+      time:"5:00 - 6:00pm",
+      content:"Don't miss this great event!"
     },
     {
       title:"Iron Pints",
-      dt:"Fri Sep 05 2014 16:00:00 GMT-0400",
-      eDt: "Sep 5th, 2014",
-      time:"4:00 pm",
-      content:"Let's All Go Grab a Beer!"
-    },
-    {
-      title:"Iron Pints 2",
-      dt:"Sun Sep 07 2014 00:00:00 GMT-0400",
-      eDt: "Sep 7th, 2014",
-      time:"6:00 pm",
-      content:"Yay!"
+      dt:"Fri Sep 12 2014 18:00:00 GMT-0400",
+      eDt: "Sep 12th, 2014",
+      time:"4:00 - 5:00pm",
+      content:"Come grab a cold one!"
     }
     ];
 
