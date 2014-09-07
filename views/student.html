@@ -5,6 +5,8 @@
 				<img ng-src="{{i.img}}" style="margin:auto; height: 200px;">
 				<div class="carousel-caption">
 					<h4>{{i.name}}</h4>
+					<span ng-init="idx = findStudent(i.name)"></span>
+					<a  href="#/student/{{$index}}"><button>See more</button></a>
 				</div>
 			</slide>
 		</carousel>
@@ -16,8 +18,10 @@
 	<div class="largeCard">
 		<img ng-src="{{studentData[indexNumber].img}}" alt="">
 		<h2>{{studentData[indexNumber].name}}</h2>
-		<h3>{{studentData[indexNumber].ghUser}}</h3>
-		<h3>{{studentData[indexNumber].tHandle}}</h3>
+		<h4>{{studentData[indexNumber].type}}</h4>
+		<h4>At Iron Yard Campus: {{studentData[indexNumber].ironyardLocation}}</h4>
+		<h5>Github user name: <a href="{{studentData[indexNumber].ghPage}}" target="_blank">{{studentData[indexNumber].ghUser}}</a></h5>
+		<h5>Twitter Handle: <a href="{{studentData[indexNumber].tPage}}" target="_blank">{{studentData[indexNumber].tHandle}}</a></h5>
 	</div>
 
 </div>
