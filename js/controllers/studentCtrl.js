@@ -8,5 +8,8 @@ angular.module("ironBookApp.controllers")
     $scope.CarouselDemoCtrl = function() {
       $scope.myInterval = 4000;
     }
+    $scope.CollapseDemoCtrl = function(){
+      $scope.isCollapsed = true;
+    }
 
   });

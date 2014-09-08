@@ -1,0 +1,8 @@
+<ul id="info">
+  <h2>Upcoming Events</h2>
+  <li ng-repeat="update in updates | dateFilter">
+    <h3>{{update.title}}</h3>
+    <h5>{{update.eDt}} @ {{update.time}}</h5>
+    <p>{{update.content}}</p>
+  </li>
+</ul>

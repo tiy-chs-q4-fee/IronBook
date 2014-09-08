@@ -1,5 +1,5 @@
 <div id="homeBox">
-  <nav id="homeNav" class="shadow rect">
+  <nav id="homeNav" class="rect">
 
     <form action="" ng-submit="">
       <label for="sort" ng-init="predicate=''">
@@ -39,7 +39,7 @@
   <article id="main">
 
     <ul>
-      <li class="smallCard shadow" ng-repeat="i in studentData | filter : search : strict | orderBy : predicate">
+      <li class="smallCard" ng-repeat="i in studentData | filter : search : strict | orderBy : predicate">
 
         <img class="miniPic" ng-src="{{i.img}}" alt="">
         <hgroup>
@@ -49,7 +49,7 @@
           <h4 class="coderType">{{i.type}}</h4>
         </hgroup>
         <span ng-init="idx = findStudent(i.name)"></span>
-        <a  href="#/student/{{idx}}"><button>See more</button></a>
+        <a class="seeMore" href="#/student/{{idx}}">See More</a>
       </li>
       <li class="animate-repeat" ng-if="search.length == 0">
       <strong>No results found...</strong>
@@ -58,13 +58,13 @@
 
   </article>
 
-  <ul id="info" class="shadow">
-    <h2>Upcoming Events</h2>
-    <li ng-repeat="update in updates | dateFilter">
-      <h3>{{update.title}}</h3>
-      <h5>{{update.eDt}} @ {{update.time}}</h5>
-      <p>{{update.content}}</p>
-    </li>
-  </ul>
+<!--   <ul id="info">
+  <h2>Upcoming Events</h2>
+  <li ng-repeat="update in updates | dateFilter">
+    <h3>{{update.title}}</h3>
+    <h5>{{update.eDt}} @ {{update.time}}</h5>
+    <p>{{update.content}}</p>
+  </li>
+</ul> -->
 
 </div>

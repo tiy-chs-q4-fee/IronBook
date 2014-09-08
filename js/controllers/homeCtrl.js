@@ -8,6 +8,11 @@ angular.module("ironBookApp.controllers")
     var length = $scope.studentData.length;
     var n = 0;
 
+    $scope.CollapseDemoCtrl = function(){
+      $scope.isCollapsed = true;
+    }
+
+
     $scope.findStudent = function (x) {
       console.log('something');
       var y = $scope.studentData;

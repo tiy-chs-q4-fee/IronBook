@@ -32,6 +32,13 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
 
       })
 
+      .when("/events", {
+
+        templateUrl:"views/events.html",
+        controller:"homeCtrl"
+
+      })
+
       .when("/notFound", {
 
         templateUrl:"views/home.html",
