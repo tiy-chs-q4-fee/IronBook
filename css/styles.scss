@@ -512,6 +512,16 @@ li {
 }
 
 @media all and (max-width: 650px), screen and (device-aspect-ratio: 16/9) {
+  #info {
+    margin-top:9%;
+    width:85%;
+    li {
+      margin-bottom:10px;
+    }
+    .odd {
+      background-color:#F4F4F4;
+    }
+  }
   .form .formWelcome h2, .form .formWelcome h3 {
     font-size:20px;
   }
@@ -569,16 +579,28 @@ li {
 }
 
 @media all and (max-width:440px), screen and (device-aspect-ratio: 16/9) {
+  #info {
+    li {
+      h3, h5, p {
+        padding-left:0;
+      }
+    }
+  }
+  .newStudentForm {
+    width: 100%;
+      h3{
+        font-size: 20px;
+      }
+    > div {
+        padding:0;
+    }
+  }
+
+
   .leftSide {
-
-    .fixClick {
-
-    }
-    .menuIcon:hover {
-
-    }
     #title {
       hgroup {
+        padding: 15px 0;
         #the {
           font-size: 28px;
           line-height:28px;

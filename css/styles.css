@@ -376,6 +376,14 @@ li {
           margin-top: 15px;
           right: 0; } }
 @media all and (max-width: 650px), screen and (device-aspect-ratio: 16 / 9) {
+  #info {
+    margin-top: 9%;
+    width: 85%; }
+    #info li {
+      margin-bottom: 10px; }
+    #info .odd {
+      background-color: #F4F4F4; }
+
   .form .formWelcome h2, .form .formWelcome h3 {
     font-size: 20px; }
 
@@ -399,13 +407,25 @@ li {
     .container .rightSide #homeBox #homeNav #sortTouch #search {
       margin-right: 20px; } }
 @media all and (max-width: 440px), screen and (device-aspect-ratio: 16 / 9) {
-  .leftSide #title hgroup #the {
-    font-size: 28px;
-    line-height: 28px; }
-  .leftSide #title hgroup #iron, .leftSide #title hgroup #book {
-    padding-left: 0;
-    font-size: 33px;
-    line-height: 33px; }
+  #info li h3, #info li h5, #info li p {
+    padding-left: 0; }
+
+  .newStudentForm {
+    width: 100%; }
+    .newStudentForm h3 {
+      font-size: 20px; }
+    .newStudentForm > div {
+      padding: 0; }
+
+  .leftSide #title hgroup {
+    padding: 15px 0; }
+    .leftSide #title hgroup #the {
+      font-size: 28px;
+      line-height: 28px; }
+    .leftSide #title hgroup #iron, .leftSide #title hgroup #book {
+      padding-left: 0;
+      font-size: 33px;
+      line-height: 33px; }
   .leftSide #title h3 {
     margin-top: 10px;
     font-size: 20px; }
