@@ -31,4 +31,7 @@ angular.module("ironBookApp.controllers")
     $scope.toHome = function () {
     $location.path("/");
   };
+  $scope.CollapseDemoCtrl = function(){
+    $scope.isCollapsed = true;
+  }
   });
