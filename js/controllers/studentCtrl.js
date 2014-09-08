@@ -5,4 +5,11 @@ angular.module("ironBookApp.controllers")
     $scope.studentData = dataSvcs.studentData;
     $scope.indexNumber = $routeParams.indexOfStudent;
 
+    $scope.CarouselDemoCtrl = function() {
+      $scope.myInterval = 4000;
+    }
+    $scope.CollapseDemoCtrl = function(){
+      $scope.isCollapsed = true;
+    }
+
   });

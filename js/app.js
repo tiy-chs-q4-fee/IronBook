@@ -1,4 +1,4 @@
-angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookApp.services"])
+angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookApp.services", "ironBookApp.filters", "ui.bootstrap"])
 
   .config(function($routeProvider) {
 
@@ -17,7 +17,7 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
         controller:"studentCtrl"
 
       })
-      
+
       .when("/student/:indexOfStudent", {
 
         templateUrl:"views/student.html",
@@ -29,6 +29,13 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
 
         templateUrl:"views/enroll.html",
         controller:"enrollCtrl"
+
+      })
+
+      .when("/events", {
+
+        templateUrl:"views/events.html",
+        controller:"homeCtrl"
 
       })
 
@@ -49,4 +56,4 @@ angular.module("ironBookApp", ["ngRoute", "ironBookApp.controllers", "ironBookAp
 
 angular.module("ironBookApp.controllers", []);
 angular.module("ironBookApp.services", []);
-
+angular.module("ironBookApp.filters", []);

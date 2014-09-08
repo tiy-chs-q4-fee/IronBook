@@ -3,37 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <title>The Iron Book</title>
-  <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body ng-app="ironBookApp">
   <!-- HEADER TO REMAIN ON EACH VIEW -->
-  <header>
+  <div class="container">
+
+
+  <header class="leftSide" ng-controller="homeCtrl">
+    <div ng-controller="CollapseDemoCtrl">
+      <a href="#" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-bars menuIcon"></i></a>
+      <div collapse="isCollapsed">
+        <div>
+          <div id="nav">
+            <a href="#/"ng-click="isCollapsed = !isCollapsed">Home</a>
+            <a href="#/student" ng-click="isCollapsed = !isCollapsed">Students</a>
+            <a href="#/enroll" ng-click="isCollapsed = !isCollapsed">Enroll</a>
+            <a href="#/events" ng-click="isCollapsed = !isCollapsed">Events</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="title">
-      <img src="images/logo.png" style="width: 150px;" alt="">
-<!--         <h2 id="the">The</h2>
-<h1 id="iron">IRON</h1>
-<h1 id="book">BOOK</h1> -->
-    </div>
-    <div id="nav">
-      <a href="#/"><button>Home</button></a>
-      <a href="#/student"><button>Students</button></a>
-      <a href="#/enroll"><button>Enroll</button></a>
-    </div>
+      <h2 id="the">The</h2>
+      <h1 id="iron">IRON</h1>
+      <h1 id="book">BOOK</h1>
+      <h3>Directory of Iron Yard<br>Students & Staff</h3>
+  </div>
   </header>
 
+
   <!-- DIFFERENT VIEWS RENDER BELOW -->
-  <div class="profileCards" ng-view>
+  <div class="rightSide profileCards" ng-view>
+
+
 
   </div ng-view>
 
-
+  </div>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/app.js"></script>
@@ -41,5 +58,7 @@
 <script src="js/controllers/homeCtrl.js"></script>
 <script src="js/controllers/studentCtrl.js"></script>
 <script src="js/controllers/enrollCtrl.js"></script>
+<script src="js/filters.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 </body>
 </html>

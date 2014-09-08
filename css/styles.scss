@@ -1,36 +1,27 @@
 $darkGrey: #444444;
 $darkBlue: #005680;
+$slate: rgb(57, 71, 78);
+$darkSlate: rgb(32, 47, 55);
+$seafoam: rgb(58, 194, 156);
 $blue: #007AB5;
 $grey: #D1D1D1;
 $black: rgb(35,31,32);
 $white: rgb(244, 244, 244);
-$font:'News Cycle', sans-serif;
+$font:'Open Sans Condensed', sans-serif;
 $font2: 'Playfair Display', serif;
 $light: 400;
 $heavy: 700;
 
 body {
   margin:0;
-  padding-top:128px;
   font-family: $font;
   background-color: $white;
-  color: $blue;
+  color: $slate;
   font-weight: $light;
-/*   background-image: url(../images/logo.png);
-background-repeat: no-repeat;
-background-size: 50%;
-background-position-x: 50%;
-background-position-y: 100px; */
+
 }
-a {
-  text-decoration:none;
-  color: $blue;
-  transition: 0.4s;
-}
-a:hover {
-  text-decoration:underline;
-  font-weight: $heavy;
-}
+
+
 button {
   color: black;
   background-color: white;
@@ -38,8 +29,7 @@ button {
   border: 1px solid $black;
   padding:10px 20px;
   transition: all .5s ease;
-/*   border-bottom: 2px solid \$darkBlue;
-border-right: 2px solid \$darkBlue; */
+
 }
 button:hover {
   background-color: $black;
@@ -49,137 +39,285 @@ button:hover {
 li {
   list-style-type:none;
 }
-.shadow {
-  box-shadow: 2px 2px 2px 0px rgba(68, 68, 68, 0.8);
-}
 
 .rect {
-  background-color:$grey;
+  background-color: white;
 }
+
+/* OVERALL CONTAINER */
+.container{
+  width: 100%;
+  padding: 0px;
+}
+
+
 /////////////////////////////////////////////////////////
 /** Header Stylings **/
-header {
+/* LEFT WIDTH */
+.leftSide{
+  width: 35%;
+  float: left;
+  position: relative;
+  vertical-align: top;
   z-index:500;
   display: block;
   position: fixed;
-  width:100%;
   top:0;
-/*   background-color: rgba(0, 0, 0, 0.6);
- */  color: black;
-  padding:21px 10px;
-  text-align: center;
-}
-#title {
-  #the{
-    font-family: $font2;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 35px;
-    margin: 0px;
-    line-height: 30px;
+  color: $black;
+  padding:21px 21px;
+  .menuIcon{
+    font-size: 30px;
+    color: $slate;
+    transition: all .2s ease;
   }
-  #iron{
-    font-family: $font2;
-    font-size: 45px;
-    font-weight: 900;
-    margin: 0px;
-    line-height: 40px;
+  .menuIcon:hover{
+    font-size: 34px;
+    color: $seafoam;
+    transition: all .2s ease;
   }
-  #book{
-    font-family: $font2;
-    font-size: 45px;
-    font-weight: 900;
-    margin: 0px;
-    line-height: 40px;
+
+  #title {
+    text-align: center;
+    margin-top: 50px;
+    #the{
+      font-family: $font2;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 75px;
+      margin: 0px;
+      line-height: 65px;
+    }
+    #iron{
+      font-family: $font2;
+      font-size: 85px;
+      font-weight: 900;
+      margin: 0px;
+      line-height: 75px;
+      letter-spacing: 12px;
+      padding-left: 12px;
+    }
+    #book{
+      font-family: $font2;
+      font-size: 85px;
+      font-weight: 900;
+      margin: 0px;
+      line-height: 75px;
+    }
+    h3{
+      font-family: $font2;
+      font-style: italic;
+      color: $slate;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  #nav {
+    opacity:1;
+    margin-top: 20px;
+    a {
+      font-size: 22px;
+      color: $black;
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      border-top: 1px solid $black;
+    }
+    a:first-child{
+      border-top: none;
+    }
+    a:hover {
+      text-decoration:none;
+      font-weight: $light;
+      background-color: $seafoam;
+      color: white;
+    }
   }
 }
 
-#nav {
-  opacity:1;
-  a {
-    color: $white;
-  }
-  a:hover {
-    text-decoration:none;
-    font-weight: $light;
-
-  }
-}
 
 /////////////////////////////////////////////////////////
+/* RIGHT WIDTH */
+.rightSide{
+  width: 65%;
+  float: right;
+  position: relative;
+  vertical-align: top;
+}
+
 /** Home Stylings **/
 #homeBox {
-  width:100%;
   margin:0;
   padding:0;
 }
 #homeNav {
-  display:block;
-  position:fixed;
-  width:99%;
-  margin:10px 0;
-  padding:5px;
-  text-align:right;
-  z-index:99;
-
+  display: block;
+  position: fixed;
+  width: 100%;
+  padding: 8px;
+  z-index: 99;
+  background-color: $white;
+  form{
+    margin-left: 6%;
+  }
+  label{
+    color: $slate;
+    margin-right: 20px;
+    font-size: 18px;
+  }
 }
 
 //MAIN SECTION
 #main {
   display: inline-block;
   position:relative;
-  margin-top:5%;
-  width:65%;
-  /* height: 575px;
-  overflow-y:scroll; */
+  margin-top: 6%;
+  ul{
+    padding: 0px;
+  }
+
   .smallCard {
     display:inline-block;
     position: relative;
-    width:28%;
-    background-color:$grey;
+    width:30%;
+    min-height: 320px;
     margin:10px;
     padding:10px;
-    border-radius:5px;
-  }
-  .coder {
-    display: inline-block;
+    border: 1px solid lightgrey;
+    text-align:center;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(10,10,10,0.75);
+    h2{
+      font-size: 25px;
+    }
+    h4{
+      font-size: 20px;
+      margin-top: 5px;
+      color: $seafoam;
+      padding: 5px;
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+    }
+    a{
+      font-family: $font2;
+      font-style: italic;
+      position: absolute;
+      color: $black;
+      text-decoration: none;
+      padding: 5px;
+      font-size: 22px;
+      bottom: 2%;
+      right: 29%;
+    }
+    a:hover{
+      border-top: 1px solid $seafoam;
+      border-bottom: 1px solid $seafoam;
+      color: $seafoam;
+      transition: all .2s ease;
+    }
   }
   .miniPic {
-    width:50px;
+    width:150px;
+    clear:right;
+  }
+  hgroup {
+    margin:5px 0 10px 0;
+  }
+  .coder {
+    margin:0;
+
+  }
+  .coderType {
+    margin:0;
   }
 }
 
 //INFO SECTION
 #info {
-  display: inline-block;
   position:relative;
-  clear:right;
-  vertical-align:top;
-  width:30%;
-  background-color:$grey;
-  margin:7% 0 0 0;
+  width:70%;
+  background-color:white;
+  margin:auto;
+  margin-top: 100px;
   padding:10px;
-  border-radius:5px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 4px 8px 0px rgba(10,10,10,0.75);
+  h2{
+    font-size: 45px;
+    font-family: $font2;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-family: $font2;
+    font-style: italic;
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  h5{
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  p{
+    padding-left: 30px;
+  }
 }
 
 //STUDENT SECTION
+.caro{
+  width: 70%;
+  margin: auto;
+}
+
+.carousel {
+   margin-top: 60px;
+   padding-top: 15px;
+  .carousel-indicators {
+    display: none;
+  }
+  .left{
+    background-image: none;
+    span{
+      color: lightgrey;
+    }
+  }
+  .right{
+    background-image: none;
+    span{
+      color: lightgrey;
+    }
+  }
+  .carousel-caption {
+    position: relative;
+    padding-bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: black;
+  }
+}
+
  .largeCard {
     display:inline-block;
     position: relative;
-    width:65%;
-    background-color:$grey;
-    margin-left:15%;
-    margin-top: 5%;
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 30px;
     padding:10px;
-    border-radius:5px;
-
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(10,10,10,0.75);
     img {
-      width: 25%;
+      width: 30%;
+      float: left;
     }
-
-    h2 {
-      display: inline-block;
-      vertical-align: top;
+    .studInfo{
+      font-family: $font;
+      float: left;
+      margin-left: 25px;
     }
   }
 
@@ -198,29 +336,39 @@ header {
   background-color:$white;
 
   .formWelcome {
-    text-align:center;
-    background-color:$grey;
-    width:50%;
-    margin:0 25%;
+    text-align: center;
+    width: 85%;
+    margin: auto;
 
     h2 {
-      margin-top:2%;
+      font-family: $font2;
+      font-weight: 700;
+      font-size: 45px;
+      margin-top:3%;
       margin-bottom:0;
     }
 
-    p {
+    h3 {
+      font-family: $font2;
+      font-style: italic;
+      font-size: 30px;
       margin:0;
-      padding-bottom:1%;
+      padding-bottom:2%;
     }
   }
 }
 
 .newStudentForm {
-  width:60%;
-  margin:1% 19%;
-  background-color:$grey;
-  text-align:center;
-
+  width: 85%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 4px 8px 0px rgba(10,10,10,0.75);
+  text-align: center;
+    h3{
+      font-size: 20px;
+    }
   > div {
     padding:1% 2%;
     text-align:center;
@@ -228,11 +376,21 @@ header {
     h3, input {
       display:inline-block;
     }
-  }
 
+  }
+  #bottInpt{
+    margin-bottom: 20px;
+    background-color: $seafoam;
+    border: none;
+    color: $white;
+  }
   .formType, .formLocation {
     display:inline-block;
     width:40%;
+  }
+  #aboutYou{
+    vertical-align: top;
+    margin-top: 0px;
   }
 }
 
@@ -243,10 +401,4 @@ header {
     width:46%;
   }
 
-  .formAbout {
-
-    h3, textarea {
-      display:block;
-    }
-  }
 }

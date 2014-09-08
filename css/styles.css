@@ -1,24 +1,9 @@
 body {
   margin: 0;
-  padding-top: 128px;
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background-color: #f4f4f4;
-  color: #007AB5;
-  font-weight: 400;
-  /*   background-image: url(../images/logo.png);
-background-repeat: no-repeat;
-background-size: 50%;
-background-position-x: 50%;
-background-position-y: 100px; */ }
-
-a {
-  text-decoration: none;
-  color: #007AB5;
-  transition: 0.4s; }
-
-a:hover {
-  text-decoration: underline;
-  font-weight: 700; }
+  color: #39474e;
+  font-weight: 400; }
 
 button {
   color: black;
@@ -26,9 +11,7 @@ button {
   border: none;
   border: 1px solid #231f20;
   padding: 10px 20px;
-  transition: all 0.5s ease;
-  /*   border-bottom: 2px solid \$darkBlue;
-border-right: 2px solid \$darkBlue; */ }
+  transition: all 0.5s ease; }
 
 button:hover {
   background-color: #231f20;
@@ -37,113 +20,230 @@ button:hover {
 li {
   list-style-type: none; }
 
-.shadow {
-  box-shadow: 2px 2px 2px 0px rgba(68, 68, 68, 0.8); }
-
 .rect {
-  background-color: #D1D1D1; }
+  background-color: white; }
+
+/* OVERALL CONTAINER */
+.container {
+  width: 100%;
+  padding: 0px; }
 
 /** Header Stylings **/
-header {
+/* LEFT WIDTH */
+.leftSide {
+  width: 35%;
+  float: left;
+  position: relative;
+  vertical-align: top;
   z-index: 500;
   display: block;
   position: fixed;
-  width: 100%;
   top: 0;
-  /*   background-color: rgba(0, 0, 0, 0.6);
- */
-  color: black;
-  padding: 21px 10px;
-  text-align: center; }
+  color: #231f20;
+  padding: 21px 21px; }
+  .leftSide .menuIcon {
+    font-size: 30px;
+    color: #39474e;
+    transition: all 0.2s ease; }
+  .leftSide .menuIcon:hover {
+    font-size: 34px;
+    color: #3ac29c;
+    transition: all 0.2s ease; }
+  .leftSide #title {
+    text-align: center;
+    margin-top: 50px; }
+    .leftSide #title #the {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 75px;
+      margin: 0px;
+      line-height: 65px; }
+    .leftSide #title #iron {
+      font-family: 'Playfair Display', serif;
+      font-size: 85px;
+      font-weight: 900;
+      margin: 0px;
+      line-height: 75px;
+      letter-spacing: 12px;
+      padding-left: 12px; }
+    .leftSide #title #book {
+      font-family: 'Playfair Display', serif;
+      font-size: 85px;
+      font-weight: 900;
+      margin: 0px;
+      line-height: 75px; }
+    .leftSide #title h3 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #39474e;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #231f20;
+      border-bottom: 1px solid #231f20; }
+  .leftSide #nav {
+    opacity: 1;
+    margin-top: 20px; }
+    .leftSide #nav a {
+      font-size: 22px;
+      color: #231f20;
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      border-top: 1px solid #231f20; }
+    .leftSide #nav a:first-child {
+      border-top: none; }
+    .leftSide #nav a:hover {
+      text-decoration: none;
+      font-weight: 400;
+      background-color: #3ac29c;
+      color: white; }
 
-#title #the {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 35px;
-  margin: 0px;
-  line-height: 30px; }
-#title #iron {
-  font-family: 'Playfair Display', serif;
-  font-size: 45px;
-  font-weight: 900;
-  margin: 0px;
-  line-height: 40px; }
-#title #book {
-  font-family: 'Playfair Display', serif;
-  font-size: 45px;
-  font-weight: 900;
-  margin: 0px;
-  line-height: 40px; }
-
-#nav {
-  opacity: 1; }
-  #nav a {
-    color: #f4f4f4; }
-  #nav a:hover {
-    text-decoration: none;
-    font-weight: 400; }
+/* RIGHT WIDTH */
+.rightSide {
+  width: 65%;
+  float: right;
+  position: relative;
+  vertical-align: top; }
 
 /** Home Stylings **/
 #homeBox {
-  width: 100%;
   margin: 0;
   padding: 0; }
 
 #homeNav {
   display: block;
   position: fixed;
-  width: 99%;
-  margin: 10px 0;
-  padding: 5px;
-  text-align: right;
-  z-index: 99; }
+  width: 100%;
+  padding: 8px;
+  z-index: 99;
+  background-color: #f4f4f4; }
+  #homeNav form {
+    margin-left: 6%; }
+  #homeNav label {
+    color: #39474e;
+    margin-right: 20px;
+    font-size: 18px; }
 
 #main {
   display: inline-block;
   position: relative;
-  margin-top: 5%;
-  width: 65%;
-  /* height: 575px;
-  overflow-y:scroll; */ }
+  margin-top: 6%; }
+  #main ul {
+    padding: 0px; }
   #main .smallCard {
     display: inline-block;
     position: relative;
-    width: 28%;
-    background-color: #D1D1D1;
+    width: 30%;
+    min-height: 320px;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px; }
-  #main .coder {
-    display: inline-block; }
+    border: 1px solid lightgrey;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.75); }
+    #main .smallCard h2 {
+      font-size: 25px; }
+    #main .smallCard h4 {
+      font-size: 20px;
+      margin-top: 5px;
+      color: #3ac29c;
+      padding: 5px;
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey; }
+    #main .smallCard a {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      position: absolute;
+      color: #231f20;
+      text-decoration: none;
+      padding: 5px;
+      font-size: 22px;
+      bottom: 2%;
+      right: 29%; }
+    #main .smallCard a:hover {
+      border-top: 1px solid #3ac29c;
+      border-bottom: 1px solid #3ac29c;
+      color: #3ac29c;
+      transition: all 0.2s ease; }
   #main .miniPic {
-    width: 50px; }
+    width: 150px;
+    clear: right; }
+  #main hgroup {
+    margin: 5px 0 10px 0; }
+  #main .coder {
+    margin: 0; }
+  #main .coderType {
+    margin: 0; }
 
 #info {
-  display: inline-block;
   position: relative;
-  clear: right;
-  vertical-align: top;
-  width: 30%;
-  background-color: #D1D1D1;
-  margin: 7% 0 0 0;
+  width: 70%;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
   padding: 10px;
-  border-radius: 5px; }
+  border: 1px solid lightgrey;
+  box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.75); }
+  #info h2 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  #info h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 30px;
+    padding-left: 30px; }
+  #info h5 {
+    padding-left: 30px;
+    font-size: 18px; }
+  #info p {
+    padding-left: 30px; }
+
+.caro {
+  width: 70%;
+  margin: auto; }
+
+.carousel {
+  margin-top: 60px;
+  padding-top: 15px; }
+  .carousel .carousel-indicators {
+    display: none; }
+  .carousel .left {
+    background-image: none; }
+    .carousel .left span {
+      color: lightgrey; }
+  .carousel .right {
+    background-image: none; }
+    .carousel .right span {
+      color: lightgrey; }
+  .carousel .carousel-caption {
+    position: relative;
+    padding-bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: black; }
 
 .largeCard {
   display: inline-block;
   position: relative;
-  width: 65%;
-  background-color: #D1D1D1;
-  margin-left: 15%;
-  margin-top: 5%;
+  width: 95%;
+  margin-left: 2%;
+  margin-bottom: 30px;
   padding: 10px;
-  border-radius: 5px; }
+  background-color: white;
+  box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.75); }
   .largeCard img {
-    width: 25%; }
-  .largeCard h2 {
-    display: inline-block;
-    vertical-align: top; }
+    width: 30%;
+    float: left; }
+  .largeCard .studInfo {
+    font-family: 'Open Sans Condensed', sans-serif;
+    float: left;
+    margin-left: 25px; }
 
 .form {
   position: relative;
@@ -153,32 +253,48 @@ header {
   background-color: #f4f4f4; }
   .form .formWelcome {
     text-align: center;
-    background-color: #D1D1D1;
-    width: 50%;
-    margin: 0 25%; }
+    width: 85%;
+    margin: auto; }
     .form .formWelcome h2 {
-      margin-top: 2%;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 45px;
+      margin-top: 3%;
       margin-bottom: 0; }
-    .form .formWelcome p {
+    .form .formWelcome h3 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 30px;
       margin: 0;
-      padding-bottom: 1%; }
+      padding-bottom: 2%; }
 
 .newStudentForm {
-  width: 60%;
-  margin: 1% 19%;
-  background-color: #D1D1D1;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.75);
   text-align: center; }
+  .newStudentForm h3 {
+    font-size: 20px; }
   .newStudentForm > div {
     padding: 1% 2%;
     text-align: center; }
     .newStudentForm > div h3, .newStudentForm > div input {
       display: inline-block; }
+  .newStudentForm #bottInpt {
+    margin-bottom: 20px;
+    background-color: #3ac29c;
+    border: none;
+    color: #f4f4f4; }
   .newStudentForm .formType, .newStudentForm .formLocation {
     display: inline-block;
     width: 40%; }
+  .newStudentForm #aboutYou {
+    vertical-align: top;
+    margin-top: 0px; }
 
 .formSocial .formGitHubName, .formSocial .formGitHubUrl, .formSocial .formTwitterName, .formSocial .formTwitterUrl {
   display: inline-block;
   width: 46%; }
-.formSocial .formAbout h3, .formSocial .formAbout textarea {
-  display: block; }
