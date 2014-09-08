@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background-color: #f4f4f4;
   color: #39474e;
   font-weight: 400; }
@@ -11,7 +11,7 @@ button {
   border: none;
   border: 1px solid #231f20;
   padding: 10px 20px;
-  transition: all .5s ease; }
+  transition: all 0.5s ease; }
 
 button:hover {
   background-color: #231f20;
@@ -44,23 +44,23 @@ li {
   .leftSide .menuIcon {
     font-size: 30px;
     color: #39474e;
-    transition: all .2s ease; }
+    transition: all 0.2s ease; }
   .leftSide .menuIcon:hover {
     font-size: 34px;
     color: #3ac29c;
-    transition: all .2s ease; }
+    transition: all 0.2s ease; }
   .leftSide #title {
     text-align: center;
     margin-top: 50px; }
     .leftSide #title #the {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-weight: 400;
       font-style: italic;
       font-size: 75px;
       margin: 0px;
       line-height: 65px; }
     .leftSide #title #iron {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-size: 85px;
       font-weight: 900;
       margin: 0px;
@@ -68,13 +68,13 @@ li {
       letter-spacing: 12px;
       padding-left: 12px; }
     .leftSide #title #book {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-size: 85px;
       font-weight: 900;
       margin: 0px;
       line-height: 75px; }
     .leftSide #title h3 {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-style: italic;
       color: #39474e;
       padding-top: 10px;
@@ -124,9 +124,11 @@ li {
     margin-left: 6%; }
     #homeNav form #sortClick {
       display: inline-block; }
+    #homeNav form #sortTouch {
+      display: inline; }
   #homeNav label {
     color: #39474e;
-    margin-right: 20px;
+    margin-right: 12px;
     font-size: 18px; }
 
 #main {
@@ -158,7 +160,7 @@ li {
       border-top: 1px solid lightgrey;
       border-bottom: 1px solid lightgrey; }
     #main .smallCard a {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-style: italic;
       position: absolute;
       color: #231f20;
@@ -171,7 +173,7 @@ li {
       border-top: 1px solid #3ac29c;
       border-bottom: 1px solid #3ac29c;
       color: #3ac29c;
-      transition: all .2s ease; }
+      transition: all 0.2s ease; }
   #main .miniPic {
     width: 150px;
     clear: right; }
@@ -193,12 +195,12 @@ li {
   box-shadow: 0px 4px 8px 0px rgba(10, 10, 10, 0.75); }
   #info h2 {
     font-size: 45px;
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 900;
     margin-top: 10px;
     margin-bottom: 20px; }
   #info h3 {
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: 30px;
     padding-left: 30px; }
@@ -245,7 +247,7 @@ li {
     width: 30%;
     float: left; }
   .largeCard .studInfo {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     float: left;
     margin-left: 25px; }
 
@@ -260,13 +262,13 @@ li {
     width: 85%;
     margin: auto; }
     .form .formWelcome h2 {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-weight: 700;
       font-size: 45px;
       margin-top: 3%;
       margin-bottom: 0; }
     .form .formWelcome h3 {
-      font-family: "Playfair Display", serif;
+      font-family: 'Playfair Display', serif;
       font-style: italic;
       font-size: 30px;
       margin: 0;
@@ -304,12 +306,13 @@ li {
   width: 46%; }
 
 /** Responsive styling **/
-@media all and (max-width: 1030px), screen and (device-aspect-ratio: 16 / 9) {
+@media all and (max-width: 1030px), screen and (device-aspect-ratio: 16/9) {
   #homeNav form {
     margin-left: 0; }
     #homeNav form #sortClick {
       display: inline-block; } }
-@media all and (max-width: 922px), screen and (device-aspect-ratio: 16 / 9) {
+
+@media all and (max-width: 922px), screen and (device-aspect-ratio: 16/9) {
   .carousel {
     margin-top: 10px; }
     .carousel .right span {
@@ -320,7 +323,6 @@ li {
       padding: 4px;
       border-radius: 2px;
       background-color: rgba(0, 0, 0, 0.5); }
-
   .leftSide {
     padding-top: 0;
     padding-bottom: 0;
@@ -356,7 +358,6 @@ li {
         position: relative;
         width: 47%;
         margin-top: 80px; }
-
   .container .rightSide {
     display: block;
     position: relative;
@@ -375,7 +376,8 @@ li {
           position: relative;
           margin-top: 15px;
           right: 0; } }
-@media all and (max-width: 650px), screen and (device-aspect-ratio: 16 / 9) {
+
+@media all and (max-width: 650px), screen and (device-aspect-ratio: 16/9) {
   #info {
     margin-top: 9%;
     width: 85%; }
@@ -383,10 +385,8 @@ li {
       margin-bottom: 10px; }
     #info .odd {
       background-color: #F4F4F4; }
-
   .form .formWelcome h2, .form .formWelcome h3 {
     font-size: 20px; }
-
   .leftSide #title hgroup #the {
     font-size: 40px;
     line-height: 40px; }
@@ -395,7 +395,6 @@ li {
     line-height: 50px; }
   .leftSide #title h3 {
     margin-top: 40px; }
-
   .container .rightSide #homeBox #homeNav #sortClick {
     width: 20%;
     min-width: 80px; }
@@ -406,17 +405,16 @@ li {
     text-align: right; }
     .container .rightSide #homeBox #homeNav #sortTouch #search {
       margin-right: 20px; } }
-@media all and (max-width: 440px), screen and (device-aspect-ratio: 16 / 9) {
+
+@media all and (max-width: 440px), screen and (device-aspect-ratio: 16/9) {
   #info li h3, #info li h5, #info li p {
     padding-left: 0; }
-
   .newStudentForm {
     width: 100%; }
     .newStudentForm h3 {
       font-size: 20px; }
     .newStudentForm > div {
       padding: 0; }
-
   .leftSide #title hgroup {
     padding: 15px 0; }
     .leftSide #title hgroup #the {
@@ -429,7 +427,6 @@ li {
   .leftSide #title h3 {
     margin-top: 10px;
     font-size: 20px; }
-
   .container .rightSide #homeBox #homeNav {
     min-height: 105px; }
     .container .rightSide #homeBox #homeNav #sortClick {

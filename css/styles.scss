@@ -165,11 +165,14 @@ li {
     #sortClick {
       display:inline-block;
     }
-    margin-left: 6%;
+      margin-left: 6%;
+    #sortTouch {
+      display: inline;
+    }
   }
   label{
     color: $slate;
-    margin-right: 20px;
+    margin-right: 12px;
     font-size: 18px;
   }
 }
