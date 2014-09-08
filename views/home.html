@@ -2,36 +2,41 @@
   <nav id="homeNav" class="rect">
 
     <form action="" ng-submit="">
-      <label for="sort" ng-init="predicate=''">
-        Name
-        <img style="transform: rotate(180deg)" ng-hide="wow" src="../images/down.gif" alt="sort a-z" ng-click="predicate='name'; wow=!wow">
-        <img src="../images/down.gif" alt="sort z-a" ng-hide="!wow" ng-click="predicate='-name'; wow=!wow">
-      </label>
-      <label for="sort" ng-init="predicate=''">
-        Type
-        <img style="transform: rotate(180deg)" src="../images/down.gif" alt="sort a-z" ng-hide="amo" ng-click="predicate='type'; amo=!amo">
-        <img src="../images/down.gif" alt="sort z-a" ng-hide="!amo" ng-click="predicate='-type'; amo=!amo">
-      </label>
+      <div id="sortClick">
+        <label for="sort" ng-init="predicate=''">
+          Name
+          <img style="transform: rotate(180deg)" ng-hide="wow" src="../images/down.gif" alt="sort a-z" ng-click="predicate='name'; wow=!wow">
+          <img src="../images/down.gif" alt="sort z-a" ng-hide="!wow" ng-click="predicate='-name'; wow=!wow">
+        </label>
+        <label for="sort" ng-init="predicate=''">
+          Type
+          <img style="transform: rotate(180deg)" src="../images/down.gif" alt="sort a-z" ng-hide="amo" ng-click="predicate='type'; amo=!amo">
+          <img src="../images/down.gif" alt="sort z-a" ng-hide="!amo" ng-click="predicate='-type'; amo=!amo">
+        </label>
+      </div>
 
-      <label for="courseFilter">
-        Filter by Course
-        <select name="cFilter" id="courseFilter" ng-model="search.type">
-          <option value="">
+      <div id="sortTouch">
+        <label for="courseFilter">
+          Filter by Course
+          <select name="cFilter" id="courseFilter" ng-model="search.type">
+            <option value="">
 
-          </option>
-          <option value="Front End Engineer">
-            Front End Engineers
-          </option>
-          <option value="Back End Engineer">
-            Back End Engineers
-          </option>
-          <option value="Staff">
-            Staff
-          </option>
-        </select>
-      </label>
+            </option>
+            <option value="Front End Engineer">
+              Front End Engineers
+            </option>
+            <option value="Back End Engineer">
+              Back End Engineers
+            </option>
+            <option value="Staff">
+              Staff
+            </option>
+          </select>
+        </label>
 
-      <input type="text" placeholder="Search by Name" ng-model="search.name">
+        <input id="search" type="text" placeholder="Search by Name" ng-model="search.name">
+      </div>
+
     </form>
 
   </nav>
