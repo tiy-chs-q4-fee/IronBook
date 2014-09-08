@@ -162,6 +162,9 @@ li {
   z-index: 99;
   background-color: $white;
   form{
+    #sortClick {
+      display:inline-block;
+    }
     margin-left: 6%;
   }
   label{
@@ -191,6 +194,8 @@ li {
     text-align:center;
     background-color: white;
     box-shadow: 0px 4px 8px 0px rgba(10,10,10,0.75);
+    max-height: 321px;
+    overflow-y: scroll;
     h2{
       font-size: 25px;
     }
@@ -399,6 +404,224 @@ li {
   .formGitHubName, .formGitHubUrl, .formTwitterName, .formTwitterUrl {
     display:inline-block;
     width:46%;
+  }
+
+}
+
+////////////////////////////////////////////////
+/** Responsive styling **/
+@media all and (max-width: 1030px), screen and (device-aspect-ratio: 16/9) {
+  #homeNav {
+    form{
+      margin-left: 0;
+      #sortClick {
+        display:inline-block;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 922px), screen and (device-aspect-ratio: 16/9)  {
+  .carousel {
+    margin-top:10px;
+    .right {
+      span {
+        padding:4px;
+        border-radius:2px;
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+    .left {
+      span {
+        padding:4px;
+        border-radius:2px;
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .leftSide {
+    padding-top: 0;
+    padding-bottom:0;
+    display:block;
+    position: relative;
+    clear: right;
+    width:95%;
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+    .fixClick {
+      z-index:600;
+      position: fixed;
+      width: 100%;
+      margin: 0 auto;
+      margin-left:-20px;
+      background-color: #3ac29c;
+      border-bottom: 1px solid black;
+      padding:10px;
+      border-radius:3px;
+    }
+    .menuIcon:hover {
+      color:white;
+    }
+    #title {
+      margin-top: 55px;
+      text-align: center;
+      margin-bottom: 1px solid black;
+      hgroup {
+        display: inline-block;
+        position: relative;
+        width: 47%;
+      }
+      h3 {
+        vertical-align: top;
+        display: inline-block;
+        position: relative;
+        width: 47%;
+        margin-top: 80px
+      }
+    }
+  }
+  .container {
+    .rightSide {
+      display:block;
+      position: relative;
+      width:100%;
+      #homeBox {
+        #homeNav {
+          display: block;
+          position: relative;
+          box-shadow: 0px 4px 8px 0px rgba(10,10,10,0.75);
+        }
+        #main {
+          margin-top: 3px;
+          //max-height:370px;
+          overflow-y: scroll;
+          .smallCard {
+            width: 45%;
+            .seeMore {
+              display: block;
+              position: relative;
+              margin-top: 15px;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media all and (max-width: 650px), screen and (device-aspect-ratio: 16/9) {
+  .form .formWelcome h2, .form .formWelcome h3 {
+    font-size:20px;
+  }
+  .leftSide {
+
+    .fixClick {
+
+    }
+    .menuIcon:hover {
+
+    }
+    #title {
+      hgroup {
+        #the {
+          font-size: 40px;
+          line-height: 40px;
+        }
+        #iron, #book {
+          font-size: 50px;
+          line-height: 50px;
+        }
+      }
+      h3 {
+        margin-top:40px;
+      }
+    }
+  }
+  .container {
+    .rightSide {
+
+      #homeBox {
+        #homeNav {
+          #sortClick {
+            width:20%;
+            min-width:80px;
+          }
+        #sortTouch {
+          display: inline-block;
+          position: relative;
+          width: 78%;
+          text-align:right;
+          #search {
+            margin-right:20px;
+          }
+        }
+
+        }
+        #main {
+
+        }
+      }
+    }
+  }
+
+}
+
+@media all and (max-width:440px), screen and (device-aspect-ratio: 16/9) {
+  .leftSide {
+
+    .fixClick {
+
+    }
+    .menuIcon:hover {
+
+    }
+    #title {
+      hgroup {
+        #the {
+          font-size: 28px;
+          line-height:28px;
+        }
+        #iron, #book {
+          padding-left:0;
+          font-size: 33px;
+          line-height: 33px;
+        }
+      }
+      h3 {
+        margin-top:10px;
+        font-size:20px;
+      }
+    }
+  }
+  .container {
+    .rightSide {
+
+      #homeBox {
+        #homeNav {
+          min-height:105px;
+          #sortClick {
+            width:20%;
+            vertical-align:top;
+          }
+          #sortTouch {
+            width: 60%;
+            float:right;
+            right:0px;
+            #search {
+              margin-right:20px;
+            }
+          }
+        }
+        #main {
+          .smallCard {
+            width: 95%;
+
+          }
+        }
+      }
+    }
   }
 
 }
